@@ -1,0 +1,68 @@
+.offer{
+
+    padding: 170px 225px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__logo{
+        height: 65px;
+    }
+
+    &__title{
+        margin-top: 140px;
+        font-size: 65px;
+    }
+
+    &__text{
+        margin-top: 65px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    &__form{
+        margin-top: 95px;
+        color: #fff;
+        background: #B02819;
+        padding: 25px 75px;
+        border-radius: 50px;
+        font-size: 32px;
+        font-weight: 600;
+        transition: .6s;
+
+        &:hover{
+            background: darken(#B02819, 10%);
+            transition: .6s;
+        }
+    }
+
+    &__tel{
+        color: #B02819;
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__goto{
+        display: block;
+        // border: 8px solid #232323;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        margin-top: 92px;
+        transition: .6s;
+
+        & i{
+            font-size: 72px;
+            
+        }
+
+        &:hover{
+
+            transition: .6s;
+        }
+    }
+}
