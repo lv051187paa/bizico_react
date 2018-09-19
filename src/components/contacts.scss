@@ -1,0 +1,148 @@
+.contacts{
+
+    padding: 85px 20px 230px;
+    background-color: #B02819;
+    color: #fff;
+    text-align: center;
+
+    &__title{
+
+        font-size: 62px;
+    }
+
+    &__text{
+        margin-top: 60px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__form{
+
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea{
+
+        height: 200px;
+        resize: none;
+        &::-webkit-input-placeholder {
+            line-height: 130px;
+         }
+         
+         &:-moz-placeholder { /* Firefox 18- */
+            line-height: 130px
+         }
+         
+         &::-moz-placeholder {  /* Firefox 19+ */
+            line-height: 130px 
+         }
+         
+         &:-ms-input-placeholder {  
+            line-height: 130px
+         }
+    }
+
+    &__input, textarea{
+        width: 710px;
+        padding: 30px 20px;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        &::-webkit-input-placeholder {
+            text-align: center;
+         }
+         
+         &:-moz-placeholder { /* Firefox 18- */
+            text-align: center;  
+         }
+         
+         &::-moz-placeholder {  /* Firefox 19+ */
+            text-align: center;  
+         }
+         
+         &:-ms-input-placeholder {  
+            text-align: center; 
+         }
+    }
+
+    &__input{
+        position: relative;
+
+        &:after{
+
+            content: '';
+            background-color: #B02819;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+
+    
+    &__submit{
+        margin-top: 15px;
+        color: #fff;
+        background: #071633;
+        padding: 16px 140px;
+        border-radius: 50px;
+        font-size: 32px;
+        font-weight: 600;
+        transition: .6s;
+
+        &:hover{
+            background: darken(#071633, 10%);
+            transition: .6s;
+        }
+    }
+
+    &__direct{
+        margin-top: 60px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    &__people{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+
+        display: flex;
+        margin: 20px 75px;
+
+        &-icon{
+
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 55px;
+        }
+
+        &-info{
+            text-align: left;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            & p{
+                line-height: 1.4;
+            }
+        }
+
+        &-name{
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+    }    
+}
